@@ -1,0 +1,1 @@
+Query operators: element operators, logical operators, array operators, and the regex operator
