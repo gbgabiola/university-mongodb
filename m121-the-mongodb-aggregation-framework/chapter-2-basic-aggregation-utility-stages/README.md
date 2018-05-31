@@ -1,0 +1,1 @@
+$addFields, $replaceRoot, $geoNear, $sample, and cursor-like stages
