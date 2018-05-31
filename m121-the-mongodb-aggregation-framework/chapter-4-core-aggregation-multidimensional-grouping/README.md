@@ -1,0 +1,1 @@
+$facet, $bucket, $bucketAuto, $sortByCount
