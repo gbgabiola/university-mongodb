@@ -1,0 +1,1 @@
+Create, Read, Update, and Delete (CRUD) operations; cursors, projections, Atlas free-tier basics.
