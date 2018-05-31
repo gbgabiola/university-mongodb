@@ -1,0 +1,56 @@
+Lab 2.2: How Many Inserted?
+
+## Problem:
+If the collection **video.myMovies** is currently empty, how many documents would be inserted by the following call to **insertMany()**.
+```
+db.myMovies.insertMany(
+  [
+    {
+      "_id" : "tt0084726",
+      "title" : "Star Trek II: The Wrath of Khan",
+      "year" : 1982,
+      "type" : "movie"
+    },
+    {
+      "_id" : "tt0796366",
+      "title" : "Star Trek",
+      "year" : 2009,
+      "type" : "movie"
+    },
+    {
+      "_id" : "tt0084726",
+      "title" : "Star Trek II: The Wrath of Khan",
+      "year" : 1982,
+      "type" : "movie"
+    },
+    {
+      "_id" : "tt1408101",
+      "title" : "Star Trek Into Darkness",
+      "year" : 2013,
+      "type" : "movie"
+    },
+    {
+      "_id" : "tt0117731",
+      "title" : "Star Trek: First Contact",
+      "year" : 1996,
+      "type" : "movie"
+    }
+  ],
+  {
+    ordered: false
+  }
+);
+```
+
+## Choose the best answer:
+* 1
+* 2
+* 3
+* 4
+* 5
+
+## Answer:
+* 4
+
+## Detailed Answer:
+There are duplicate **_id** values for the two entries for "Star Trek II: The Wrath of Kahn". The second instance of this movie appearing in the array will not be inserted. However, since we are specifying that **insertMany()** should perform an unordered insert, all other documents will be inserts for a total of 4.
